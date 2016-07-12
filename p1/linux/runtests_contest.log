@@ -1,0 +1,456 @@
+/afs/cs.wisc.edu/p/course/cs537-dusseau/ta/tools
+starting build
+
+**********************************************************************
+
+Test build
+build project using make
+
+**********************************************************************
+Trying to clean project using make clean
+make clean
+make: *** No rule to make target `clean'.  Stop.
+Trying to build project using make
+make
+make: *** No targets specified and no makefile found.  Stop.
+Trying to build using gcc
+gcc -O -Wall -o rangesort rangesort.c -I/afs/cs.wisc.edu/p/course/cs537-dusseau/ta/tests/1a-evaluation
+
+
+test build PASSED
+ (build project using make)
+
+starting contest
+
+**********************************************************************
+
+Test contest
+contest
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-evaluation/generate -s 0 -n 1000000 -o /tmp/tmpuinCGA/p/infile
+range [ 1442 , 428024844 ] includes roughly 20.0 % of the input keys
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.397849082947 seconds
+Checking output
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.394776105881 seconds
+Checking output
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.395613908768 seconds
+Checking output
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.394091844559 seconds
+Checking output
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.39558506012 seconds
+Checking output
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.39696097374 seconds
+Checking output
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.392349004745 seconds
+Checking output
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.400938987732 seconds
+Checking output
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.391910076141 seconds
+Checking output
+Running rangesort with range [1442, 428024844]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 428024844
+Rangesort completed in 0.397141933441 seconds
+Checking output
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-evaluation/generate -s 1 -n 1000000 -o /tmp/tmpuinCGA/p/infile
+range [ 100145362 , 529014407 ] includes roughly 20.0001 % of the input keys
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.397312879562 seconds
+Checking output
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.402122974396 seconds
+Checking output
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.393627882004 seconds
+Checking output
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.398772954941 seconds
+Checking output
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.394381046295 seconds
+Checking output
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.393971920013 seconds
+Checking output
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.394664049149 seconds
+Checking output
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.39421916008 seconds
+Checking output
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.395682811737 seconds
+Checking output
+Running rangesort with range [100145362, 529014407]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 100145362 -h 529014407
+Rangesort completed in 0.392776012421 seconds
+Checking output
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-evaluation/generate -s 2 -n 1000000 -o /tmp/tmpuinCGA/p/infile
+range [ 1717882752 , 2147479318 ] includes roughly 20.0 % of the input keys
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.393607854843 seconds
+Checking output
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.394076824188 seconds
+Checking output
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.394366025925 seconds
+Checking output
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.394287109375 seconds
+Checking output
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.406493902206 seconds
+Checking output
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.397407054901 seconds
+Checking output
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.400227069855 seconds
+Checking output
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.39975810051 seconds
+Checking output
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.399038076401 seconds
+Checking output
+Running rangesort with range [1717882752, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1717882752 -h 2147479318
+Rangesort completed in 0.395348072052 seconds
+Checking output
+best   0.391910076141
+median 0.395466566086
+worst  0.406493902206
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-evaluation/generate -s 0 -n 1000000 -o /tmp/tmpuinCGA/p/infile
+range [ 697141197 , 1770973963 ] includes roughly 50.0001 % of the input keys
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.768143892288 seconds
+Checking output
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.75821685791 seconds
+Checking output
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.758867025375 seconds
+Checking output
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.756746053696 seconds
+Checking output
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.756822824478 seconds
+Checking output
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.756312131882 seconds
+Checking output
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.757963180542 seconds
+Checking output
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.758921861649 seconds
+Checking output
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.757608175278 seconds
+Checking output
+Running rangesort with range [697141197, 1770973963]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 697141197 -h 1770973963
+Rangesort completed in 0.75820016861 seconds
+Checking output
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-evaluation/generate -s 1 -n 1000000 -o /tmp/tmpuinCGA/p/infile
+range [ 305706330 , 1379066313 ] includes roughly 50.0001 % of the input keys
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.7638630867 seconds
+Checking output
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.764868021011 seconds
+Checking output
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.761137962341 seconds
+Checking output
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.763010978699 seconds
+Checking output
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.760455846786 seconds
+Checking output
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.758720874786 seconds
+Checking output
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.75808596611 seconds
+Checking output
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.757708072662 seconds
+Checking output
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.759093999863 seconds
+Checking output
+Running rangesort with range [305706330, 1379066313]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 305706330 -h 1379066313
+Rangesort completed in 0.757452964783 seconds
+Checking output
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-evaluation/generate -s 2 -n 1000000 -o /tmp/tmpuinCGA/p/infile
+range [ 1074604696 , 2147479318 ] includes roughly 50.0 % of the input keys
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.766568183899 seconds
+Checking output
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.777981996536 seconds
+Checking output
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.755963087082 seconds
+Checking output
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.756472110748 seconds
+Checking output
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.756915807724 seconds
+Checking output
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.761893987656 seconds
+Checking output
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.755880832672 seconds
+Checking output
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.756356954575 seconds
+Checking output
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.7571849823 seconds
+Checking output
+Running rangesort with range [1074604696, 2147479318]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1074604696 -h 2147479318
+Rangesort completed in 0.757051229477 seconds
+Checking output
+best   0.755880832672
+median 0.75814306736
+worst  0.777981996536
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-evaluation/generate -s 0 -n 1000000 -o /tmp/tmpuinCGA/p/infile
+range [ 172782039 , 1891958965 ] includes roughly 80.0001 % of the input keys
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.13510394096 seconds
+Checking output
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.13677406311 seconds
+Checking output
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.13365077972 seconds
+Checking output
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.13035607338 seconds
+Checking output
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.14914417267 seconds
+Checking output
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.13595104218 seconds
+Checking output
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.13276314735 seconds
+Checking output
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.1505510807 seconds
+Checking output
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.12535190582 seconds
+Checking output
+Running rangesort with range [172782039, 1891958965]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 172782039 -h 1891958965
+Rangesort completed in 1.13224101067 seconds
+Checking output
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-evaluation/generate -s 1 -n 1000000 -o /tmp/tmpuinCGA/p/infile
+range [ 1442 , 1717797304 ] includes roughly 80.0 % of the input keys
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.1260330677 seconds
+Checking output
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.13154697418 seconds
+Checking output
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.12589216232 seconds
+Checking output
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.12805604935 seconds
+Checking output
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.13398814201 seconds
+Checking output
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.1289961338 seconds
+Checking output
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.12681102753 seconds
+Checking output
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.12250900269 seconds
+Checking output
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.12966108322 seconds
+Checking output
+Running rangesort with range [1442, 1717797304]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 1442 -h 1717797304
+Rangesort completed in 1.13126587868 seconds
+Checking output
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-evaluation/generate -s 2 -n 1000000 -o /tmp/tmpuinCGA/p/infile
+range [ 618 , 1716940179 ] includes roughly 80.0 % of the input keys
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.13389992714 seconds
+Checking output
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.12307500839 seconds
+Checking output
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.1278488636 seconds
+Checking output
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.12629795074 seconds
+Checking output
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.13099694252 seconds
+Checking output
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.13453602791 seconds
+Checking output
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.12681603432 seconds
+Checking output
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.12445402145 seconds
+Checking output
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.12529802322 seconds
+Checking output
+Running rangesort with range [618, 1716940179]
+/tmp/tmpuinCGA/p/rangesort -i /tmp/tmpuinCGA/p/infile -o /tmp/tmpuinCGA/p/outfile -l 618 -h 1716940179
+Rangesort completed in 1.13427090645 seconds
+Checking output
+best   1.12250900269
+median 1.13067650795
+worst  1.1505510807
+
+
+
+
+**********************************************************************
+Evaluation Summary: 
+The performance on three ranges: 
+[0.39546656608581543, 0.75814306735992432, 1.1306765079498291] 
+
+Final result (average): 
+0.761428713799 
+
+Score in the large input part is: 
+18 / 18 
+
+
+
+test contest PASSED
+ (contest)
+
+**********************************************************************
+Summary:
+test build PASSED
+ (build project using make)
+
+test contest PASSED
+ (contest)
+
+Passed 2 of 2 tests.
+Overall 2 of 2

@@ -1,0 +1,484 @@
+starting build
+
+**********************************************************************
+
+Test build
+build project using make
+
+**********************************************************************
+Trying to clean project using make clean
+make clean
+make: *** No rule to make target `clean'.  Stop.
+Trying to build project using make
+make
+make: *** No targets specified and no makefile found.  Stop.
+Trying to build using gcc
+gcc -O -Wall -o rangesort rangesort.c -I/afs/cs.wisc.edu/p/course/cs537-dusseau/ta/tests/1a-grading
+
+
+test build PASSED
+ (build project using make)
+
+starting arg
+
+**********************************************************************
+
+Test arg
+Bad arguments
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort
+
+
+test arg PASSED (1 of 1)
+ (Bad arguments)
+
+starting arg2
+
+**********************************************************************
+
+Test arg2
+Bad arguments
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort a b c d
+
+
+test arg2 PASSED (1 of 1)
+ (Bad arguments)
+
+starting arg3
+
+**********************************************************************
+
+Test arg3
+Missing flag
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i input -o output -h 10
+
+
+test arg3 PASSED (1 of 1)
+ (Missing flag)
+
+starting arg4
+
+**********************************************************************
+
+Test arg4
+Undefined extra flag
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i input -o output -l 0 -h 8 -k invalid
+
+
+test arg4 PASSED (1 of 1)
+ (Undefined extra flag)
+
+starting arg5
+
+**********************************************************************
+
+Test arg5
+Invalid range error: a non 32-bit unsigned integer value given as low value
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i input -o output -l invalid -h 10
+
+
+test arg5 PASSED (1 of 1)
+ (Invalid range error: a non 32-bit unsigned integer value given as low value)
+
+starting arg6
+
+**********************************************************************
+
+Test arg6
+Invalid range error: a non 32-bit unsigned integer value given as high value
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i input -o output -l 5 -h invalid
+
+
+test arg6 PASSED (1 of 1)
+ (Invalid range error: a non 32-bit unsigned integer value given as high value)
+
+starting badin
+
+**********************************************************************
+
+Test badin
+Bad input file
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i /invalid/path/64RgO7 -o outfile -l 1 -h 100
+
+
+test badin PASSED (1 of 1)
+ (Bad input file)
+
+starting badout
+
+**********************************************************************
+
+Test badout
+Bad output file
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o /invalid/path/64RgO7 -l 1 -h 100
+
+
+test badout PASSED (1 of 1)
+ (Bad output file)
+
+starting invalidhighvalue
+
+**********************************************************************
+
+Test invalidhighvalue
+Invalid range error: High value greater than UINT_MAX
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o outfile -l 0 -h 9999999999999
+
+
+test invalidhighvalue PASSED (1 of 1)
+ (Invalid range error: High value greater than UINT_MAX)
+
+starting invalidlowvalue
+
+**********************************************************************
+
+Test invalidlowvalue
+Invalid range error: Negative low value
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o outfile -l -5 -h 999
+
+
+test invalidlowvalue PASSED (1 of 1)
+ (Invalid range error: Negative low value)
+
+starting invalidvalues_1
+
+**********************************************************************
+
+Test invalidvalues_1
+Invalid range error: Low and high values greater than UINT_MAX
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o outfile -l 8888888888888 -h 9999999999999
+
+
+test invalidvalues_1 PASSED (1 of 1)
+ (Invalid range error: Low and high values greater than UINT_MAX)
+
+starting invalidvalues_2
+
+**********************************************************************
+
+Test invalidvalues_2
+Invalid range error: Negative low and high value
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o outfile -l -5 -h -1
+
+
+test invalidvalues_2 PASSED (1 of 1)
+ (Invalid range error: Negative low and high value)
+
+starting lowgreaterhigh
+
+**********************************************************************
+
+Test lowgreaterhigh
+Low value greater than the high value
+
+**********************************************************************
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o outfile -l 1000 -h 500
+
+
+test lowgreaterhigh PASSED (1 of 1)
+ (Low value greater than the high value)
+
+starting empty
+
+**********************************************************************
+
+Test empty
+Empty input file. Output file should be empty
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-grading/generate -s 10 -n 0 -o /tmp/tmpXq96GI/p/infile
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o /tmp/tmpXq96GI/p/outfile -l 918 -h 7750
+Rangesort completed in 0.000732898712158 seconds
+Checking output
+
+
+test empty PASSED (7 of 7)
+ (Empty input file. Output file should be empty)
+
+starting one
+
+**********************************************************************
+
+Test one
+Input file with a single record
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-grading/generate -s 10 -n 1 -o /tmp/tmpXq96GI/p/infile
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o /tmp/tmpXq96GI/p/outfile -l 2 -h 1215069295
+Rangesort completed in 0.000790119171143 seconds
+Checking output
+
+
+test one PASSED (7 of 7)
+ (Input file with a single record)
+
+starting five1
+
+**********************************************************************
+
+Test five1
+Input file with five records
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-grading/generate -s 11 -n 5 -o /tmp/tmpXq96GI/p/infile
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o /tmp/tmpXq96GI/p/outfile -l 758693 -h 49389750
+Rangesort completed in 0.000750064849854 seconds
+Checking output
+
+
+test five1 PASSED (7 of 7)
+ (Input file with five records)
+
+starting five2
+
+**********************************************************************
+
+Test five2
+Input file with five records
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-grading/generate -s 12 -n 5 -o /tmp/tmpXq96GI/p/infile
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o /tmp/tmpXq96GI/p/outfile -l 3175869 -h 11897750
+Rangesort completed in 0.000741004943848 seconds
+Checking output
+
+
+test five2 PASSED (7 of 7)
+ (Input file with five records)
+
+starting medium
+
+**********************************************************************
+
+Test medium
+Input file with 100 records
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-grading/generate -s 13 -n 100 -o /tmp/tmpXq96GI/p/infile
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o /tmp/tmpXq96GI/p/outfile -l 30029984 -h 100948125
+Rangesort completed in 0.000782012939453 seconds
+Checking output
+
+
+test medium PASSED (7 of 7)
+ (Input file with 100 records)
+
+starting large
+
+**********************************************************************
+
+Test large
+Input file with 10k records
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-grading/generate -s 14 -n 10000 -o /tmp/tmpXq96GI/p/infile
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o /tmp/tmpXq96GI/p/outfile -l 2000 -h 1246803579
+Rangesort completed in 0.00801992416382 seconds
+Checking output
+
+
+test large PASSED (7 of 7)
+ (Input file with 10k records)
+
+starting verylarge
+
+**********************************************************************
+
+Test verylarge
+Input file with 100k records
+
+**********************************************************************
+Generating input file
+/u/c/s/cs537-1/ta/tests/1a-grading/generate -s 15 -n 100000 -o /tmp/tmpXq96GI/p/infile
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /tmp/tmpXq96GI/p/infile -o /tmp/tmpXq96GI/p/outfile -l 100 -h 2000000000
+Rangesort completed in 0.108945846558 seconds
+Checking output
+
+
+test verylarge PASSED (7 of 7)
+ (Input file with 100k records)
+
+starting dup
+
+**********************************************************************
+
+Test dup
+duplicate records
+
+**********************************************************************
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /u/c/s/cs537-1/ta/tests/1a-grading/dupdata -o /tmp/tmpXq96GI/p/outfile -l 0 -h 0
+Rangesort completed in 0.00118207931519 seconds
+Checking output
+
+
+test dup PASSED (5 of 5)
+ (duplicate records)
+
+starting zero selected
+
+**********************************************************************
+
+Test zero selected
+Zero records sorted
+
+**********************************************************************
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /u/c/s/cs537-1/ta/tests/1a-grading/selectedrecs -o /tmp/tmpXq96GI/p/outfile -l 10 -h 200
+Rangesort completed in 0.000960111618042 seconds
+Checking output
+
+
+test zero selected PASSED (5 of 5)
+ (Zero records sorted)
+
+starting one selected
+
+**********************************************************************
+
+Test one selected
+One record sorted
+
+**********************************************************************
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /u/c/s/cs537-1/ta/tests/1a-grading/selectedrecs -o /tmp/tmpXq96GI/p/outfile -l 460457228 -h 460457228
+Rangesort completed in 0.000886201858521 seconds
+Checking output
+
+
+test one selected PASSED (5 of 5)
+ (One record sorted)
+
+starting all selected
+
+**********************************************************************
+
+Test all selected
+All records sorted
+
+**********************************************************************
+Running rangesort
+/tmp/tmpXq96GI/p/rangesort -i /u/c/s/cs537-1/ta/tests/1a-grading/selectedrecs -o /tmp/tmpXq96GI/p/outfile -l 0 -h 1482533822
+Rangesort completed in 0.000909090042114 seconds
+Checking output
+
+
+test all selected PASSED (5 of 5)
+ (All records sorted)
+
+**********************************************************************
+Summary:
+test build PASSED
+ (build project using make)
+
+test arg PASSED (1 of 1)
+ (Bad arguments)
+
+test arg2 PASSED (1 of 1)
+ (Bad arguments)
+
+test arg3 PASSED (1 of 1)
+ (Missing flag)
+
+test arg4 PASSED (1 of 1)
+ (Undefined extra flag)
+
+test arg5 PASSED (1 of 1)
+ (Invalid range error: a non 32-bit unsigned integer value given as low value)
+
+test arg6 PASSED (1 of 1)
+ (Invalid range error: a non 32-bit unsigned integer value given as high value)
+
+test badin PASSED (1 of 1)
+ (Bad input file)
+
+test badout PASSED (1 of 1)
+ (Bad output file)
+
+test invalidhighvalue PASSED (1 of 1)
+ (Invalid range error: High value greater than UINT_MAX)
+
+test invalidlowvalue PASSED (1 of 1)
+ (Invalid range error: Negative low value)
+
+test invalidvalues_1 PASSED (1 of 1)
+ (Invalid range error: Low and high values greater than UINT_MAX)
+
+test invalidvalues_2 PASSED (1 of 1)
+ (Invalid range error: Negative low and high value)
+
+test lowgreaterhigh PASSED (1 of 1)
+ (Low value greater than the high value)
+
+test empty PASSED (7 of 7)
+ (Empty input file. Output file should be empty)
+
+test one PASSED (7 of 7)
+ (Input file with a single record)
+
+test five1 PASSED (7 of 7)
+ (Input file with five records)
+
+test five2 PASSED (7 of 7)
+ (Input file with five records)
+
+test medium PASSED (7 of 7)
+ (Input file with 100 records)
+
+test large PASSED (7 of 7)
+ (Input file with 10k records)
+
+test verylarge PASSED (7 of 7)
+ (Input file with 100k records)
+
+test dup PASSED (5 of 5)
+ (duplicate records)
+
+test zero selected PASSED (5 of 5)
+ (Zero records sorted)
+
+test one selected PASSED (5 of 5)
+ (One record sorted)
+
+test all selected PASSED (5 of 5)
+ (All records sorted)
+
+Passed 25 of 25 tests.
+Overall 25 of 25
+Points 82 of 82
