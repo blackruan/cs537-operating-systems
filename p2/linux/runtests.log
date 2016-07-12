@@ -1,0 +1,541 @@
+starting build
+
+**********************************************************************
+
+Test build
+build project using make
+
+**********************************************************************
+Trying to clean project using make clean
+make clean
+rm -f mysh
+Trying to build project using make
+make
+gcc -o mysh mysh.c -Wall
+
+
+test build PASSED
+ (build project using make)
+
+starting basic
+
+**********************************************************************
+
+Test basic
+run a single command with no arguments
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/basic/in
+
+
+test basic PASSED (2 of 2)
+ (run a single command with no arguments)
+
+starting blank
+
+**********************************************************************
+
+Test blank
+an empty batch file
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/blank/in
+
+
+test blank PASSED (2 of 2)
+ (an empty batch file)
+
+starting parseargs
+
+**********************************************************************
+
+Test parseargs
+a command with an argument
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/parseargs/in
+
+
+test parseargs PASSED (2 of 2)
+ (a command with an argument)
+
+starting parseargs2
+
+**********************************************************************
+
+Test parseargs2
+a command with many arguments
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/parseargs2/in
+
+
+test parseargs2 PASSED (3 of 3)
+ (a command with many arguments)
+
+starting exit
+
+**********************************************************************
+
+Test exit
+the builtin exit command
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/exit/in
+
+
+test exit PASSED (2 of 2)
+ (the builtin exit command)
+
+starting whitespace
+
+**********************************************************************
+
+Test whitespace
+serveral commands with extra whitespace
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/whitespace/in
+
+
+test whitespace PASSED (3 of 3)
+ (serveral commands with extra whitespace)
+
+starting args
+
+**********************************************************************
+
+Test args
+too many arguments to mysh
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/args/in /bogus
+
+
+test args PASSED (3 of 3)
+ (too many arguments to mysh)
+
+starting args2
+
+**********************************************************************
+
+Test args2
+invalid batch file path
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /bogus
+
+
+test args2 PASSED (3 of 3)
+ (invalid batch file path)
+
+starting longline
+
+**********************************************************************
+
+Test longline
+maximum length line
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/longline/in
+
+
+test longline PASSED (4 of 4)
+ (maximum length line)
+
+starting toolong
+
+**********************************************************************
+
+Test toolong
+a line that is too long
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/toolong/in
+
+
+test toolong PASSED (4 of 4)
+ (a line that is too long)
+
+starting badprog
+
+**********************************************************************
+
+Test badprog
+bad executable path as command
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/badprog/in
+
+
+test badprog PASSED (3 of 3)
+ (bad executable path as command)
+
+starting errout
+
+**********************************************************************
+
+Test errout
+a called program produces error output, but no errors from the shell itself
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/errout/in
+
+
+test errout PASSED (2 of 2)
+ (a called program produces error output, but no errors from the shell itself)
+
+starting badexit
+
+**********************************************************************
+
+Test badexit
+invalid arguments to exit
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/badexit/in
+
+
+test badexit PASSED (3 of 3)
+ (invalid arguments to exit)
+
+starting basic_hist
+
+**********************************************************************
+
+Test basic_hist
+access to an index older than last 20 entries
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/basic_hist/in
+
+
+test basic_hist PASSED (4 of 4)
+ (access to an index older than last 20 entries)
+
+starting extraargs_exclaim
+
+**********************************************************************
+
+Test extraargs_exclaim
+passing extra args to !
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/extraargs_exclaim/in
+
+
+test extraargs_exclaim PASSED (3 of 3)
+ (passing extra args to !)
+
+starting extraargs_hist
+
+**********************************************************************
+
+Test extraargs_hist
+passing extra args to history
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/extraargs_hist/in
+
+
+test extraargs_hist PASSED (3 of 3)
+ (passing extra args to history)
+
+starting hist1
+
+**********************************************************************
+
+Test hist1
+check if the first command in history can be executed using !, if !1 is the 21st command
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/hist1/in
+
+
+test hist1 PASSED (4 of 4)
+ (check if the first command in history can be executed using !, if !1 is the 21st command)
+
+starting hist2
+
+**********************************************************************
+
+Test hist2
+display last 20 commands including history
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/hist2/in
+
+
+test hist2 PASSED (5 of 5)
+ (display last 20 commands including history)
+
+starting hist3
+
+**********************************************************************
+
+Test hist3
+invalid index in !
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/hist3/in
+
+
+test hist3 PASSED (5 of 5)
+ (invalid index in !)
+
+starting invalid_arg
+
+**********************************************************************
+
+Test invalid_arg
+invalid arg to ls
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/invalid_arg/in
+
+
+test invalid_arg PASSED (3 of 3)
+ (invalid arg to ls)
+
+starting randin
+
+**********************************************************************
+
+Test randin
+random input xyz
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/randin/in
+
+
+test randin PASSED (3 of 3)
+ (random input xyz)
+
+starting redir_hist
+
+**********************************************************************
+
+Test redir_hist
+to check if the redirection in a history command is taken care of
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/redir_hist/in
+
+
+test redir_hist PASSED (4 of 4)
+ (to check if the redirection in a history command is taken care of)
+
+starting valid_hist
+
+**********************************************************************
+
+Test valid_hist
+to check if the commands entered in history have correct syntax
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/valid_hist/in
+
+
+test valid_hist PASSED (4 of 4)
+ (to check if the commands entered in history have correct syntax)
+
+starting wrong_redir
+
+**********************************************************************
+
+Test wrong_redir
+to check if there is a wrong use of redirection mkdir > 1.txt
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/wrong_redir/in
+
+
+test wrong_redir PASSED (3 of 3)
+ (to check if there is a wrong use of redirection mkdir > 1.txt)
+
+starting redirect
+
+**********************************************************************
+
+Test redirect
+simple redirection using >
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/redirect/in
+
+
+test redirect PASSED (5 of 5)
+ (simple redirection using >)
+
+starting redirect2
+
+**********************************************************************
+
+Test redirect2
+redirection and mutiple arguments
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/redirect2/in
+
+
+test redirect2 PASSED (3 of 3)
+ (redirection and mutiple arguments)
+
+starting badredir
+
+**********************************************************************
+
+Test badredir
+redirect to invalid path
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/badredir/in
+
+
+test badredir PASSED (3 of 3)
+ (redirect to invalid path)
+
+starting badredir2
+
+**********************************************************************
+
+Test badredir2
+redirect to multiple paths
+
+**********************************************************************
+/tmp/tmp0TETLx/p/./mysh /u/c/s/cs537-1/ta/tests/2a/badredir2/in
+
+
+test badredir2 PASSED (3 of 3)
+ (redirect to multiple paths)
+
+starting interactive
+
+**********************************************************************
+
+Test interactive
+simple command in interactive mode
+
+**********************************************************************
+Running mysh with 1 command: see /u/c/s/cs537-1/ta/tests/2a/interactive/in
+
+/tmp/tmp0TETLx/p/./mysh
+
+
+test interactive PASSED (5 of 5)
+ (simple command in interactive mode)
+
+starting interactive2
+
+**********************************************************************
+
+Test interactive2
+series of commands in interactive mode
+
+**********************************************************************
+Running mysh with several commands: see /u/c/s/cs537-1/ta/tests/2a/interactive2/in
+
+/tmp/tmp0TETLx/p/./mysh
+
+
+test interactive2 PASSED (4 of 4)
+ (series of commands in interactive mode)
+
+**********************************************************************
+Summary:
+test build PASSED
+ (build project using make)
+
+test basic PASSED (2 of 2)
+ (run a single command with no arguments)
+
+test blank PASSED (2 of 2)
+ (an empty batch file)
+
+test parseargs PASSED (2 of 2)
+ (a command with an argument)
+
+test parseargs2 PASSED (3 of 3)
+ (a command with many arguments)
+
+test exit PASSED (2 of 2)
+ (the builtin exit command)
+
+test whitespace PASSED (3 of 3)
+ (serveral commands with extra whitespace)
+
+test args PASSED (3 of 3)
+ (too many arguments to mysh)
+
+test args2 PASSED (3 of 3)
+ (invalid batch file path)
+
+test longline PASSED (4 of 4)
+ (maximum length line)
+
+test toolong PASSED (4 of 4)
+ (a line that is too long)
+
+test badprog PASSED (3 of 3)
+ (bad executable path as command)
+
+test errout PASSED (2 of 2)
+ (a called program produces error output, but no errors from the shell itself)
+
+test badexit PASSED (3 of 3)
+ (invalid arguments to exit)
+
+test basic_hist PASSED (4 of 4)
+ (access to an index older than last 20 entries)
+
+test extraargs_exclaim PASSED (3 of 3)
+ (passing extra args to !)
+
+test extraargs_hist PASSED (3 of 3)
+ (passing extra args to history)
+
+test hist1 PASSED (4 of 4)
+ (check if the first command in history can be executed using !, if !1 is the 21st command)
+
+test hist2 PASSED (5 of 5)
+ (display last 20 commands including history)
+
+test hist3 PASSED (5 of 5)
+ (invalid index in !)
+
+test invalid_arg PASSED (3 of 3)
+ (invalid arg to ls)
+
+test randin PASSED (3 of 3)
+ (random input xyz)
+
+test redir_hist PASSED (4 of 4)
+ (to check if the redirection in a history command is taken care of)
+
+test valid_hist PASSED (4 of 4)
+ (to check if the commands entered in history have correct syntax)
+
+test wrong_redir PASSED (3 of 3)
+ (to check if there is a wrong use of redirection mkdir > 1.txt)
+
+test redirect PASSED (5 of 5)
+ (simple redirection using >)
+
+test redirect2 PASSED (3 of 3)
+ (redirection and mutiple arguments)
+
+test badredir PASSED (3 of 3)
+ (redirect to invalid path)
+
+test badredir2 PASSED (3 of 3)
+ (redirect to multiple paths)
+
+test interactive PASSED (5 of 5)
+ (simple command in interactive mode)
+
+test interactive2 PASSED (4 of 4)
+ (series of commands in interactive mode)
+
+Passed 31 of 31 tests.
+Overall 31 of 31
+Points 100 of 100
